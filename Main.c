@@ -29,9 +29,20 @@ int dividirCarteira(double N, double K)
 
 int main(int argc, char const *argv[])
 {
-    printf("%d\n", dividirCarteira(18, 4));
-    printf("%d\n", dividirCarteira(5, 10));
-    printf("%d\n", dividirCarteira(100, 1));
-    printf("%d\n", dividirCarteira(64, 6));
+    int n = 0;
+    int k = 0;
+
+    do
+    {
+        
+        scanf("%d %d", &n, &k);
+        
+        if ((n != 0) && (k != 0))
+        {
+            printf("%d\n", dividirCarteira(n, k));
+        }
+
+    } while ((n != 0) && (k != 0));
+
     return 0;
 }
