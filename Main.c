@@ -9,6 +9,23 @@
  * 
  */
 
+#include <math.h>
+
+/**
+ * @brief Retorna em quantas empresas pode ser investido o valor N de acordo com
+ * a regra do exercício.
+ * 
+ * @param N 
+ * @param K 
+ * @return int 
+ */
+int dividirCarteira(double N, double K)
+{
+    if (N <= K) return 1;
+
+    return dividirCarteira(floor(N / 2), K) + dividirCarteira(ceil(N / 2), K);
+}
+
 int main(int argc, char const *argv[])
 {
     
