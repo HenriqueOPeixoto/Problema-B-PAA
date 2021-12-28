@@ -10,6 +10,7 @@
  */
 
 #include <math.h>
+#include <stdio.h>
 
 /**
  * @brief Retorna em quantas empresas pode ser investido o valor N de acordo com
@@ -28,6 +29,9 @@ int dividirCarteira(double N, double K)
 
 int main(int argc, char const *argv[])
 {
-    
+    printf("%d\n", dividirCarteira(18, 4));
+    printf("%d\n", dividirCarteira(5, 10));
+    printf("%d\n", dividirCarteira(100, 1));
+    printf("%d\n", dividirCarteira(64, 6));
     return 0;
 }
